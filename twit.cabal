@@ -1,0 +1,30 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 16fe0086fbaba415d6be63182b5103474ce623088f68b78f79db27bdf513e6b7
+
+name:           twit
+version:        1.0.0.0
+category:       Web
+homepage:       https://github.com/hlian/twit-haskell
+author:         Hao Lian
+maintainer:     hao.lian@originate.com
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    README.md
+
+executable twit
+  main-is: Main.hs
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , scotty
+  other-modules:
+      Paths_twit
+  default-language: Haskell2010
