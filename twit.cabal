@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 16fe0086fbaba415d6be63182b5103474ce623088f68b78f79db27bdf513e6b7
+-- hash: 9a9ad976f731dd31d5a617f60d51d2617093f58c4f3ad4ef3fe2f73ec94292b7
 
 name:           twit
 version:        1.0.0.0
@@ -23,7 +23,11 @@ executable twit
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
+    , containers
+    , http-types
+    , mtl
     , scotty
   other-modules:
       Paths_twit
